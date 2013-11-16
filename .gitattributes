@@ -1,0 +1,2 @@
+*.js export-subst
+.gitattributes export-ignore

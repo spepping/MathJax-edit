@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>MathJax test 1</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<!--
+	<script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+-->
+<!--
+	<script type="text/javascript"
+			src="MathJax/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+-->
+<!--
+	<script type="text/javascript"
+			src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+-->
+<!--
+	<script type="text/javascript"
+			src="MathJax/unpacked/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+	</script>
+-->
+	<script type="text/javascript"
+			src="MathJax/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+	</script>
+	<script type="text/javascript" src="MathJax-edit.js"></script>
+	<script type="text/javascript" src="call-mathjax-edit.js"></script>
+	<script type="text/javascript">callMathJaxCorrection.setVerbose(true)</script>
+  </head>
+  <body id="body">
+	<!-- <p>A TeX equation: $c$, an AsciiMath equation: `c`</p> -->
+	<p>Our first equation,
+	  <math><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow>
+		<mrow><mo>(</mo><mi>c</mi><mo>-</mo><mi>d</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn></math>
+	  is a simple equation.</p>
+	<p>With all mrows: Our first equation,
+	  <math><mrow><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow>
+		<mrow><mo>(</mo><mi>c</mi><mo>-</mo><mi>d</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn></mrow></math>
+	  is a simple equation.</p>
+	<p>Our second equation,
+	  <math id="math2"><mi>abcde</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>5</mn></math>
+	  is a simple equation.</p>
+	<p>Our third equation,
+	  <math id="math2" xmlns="http://www.w3.org/1998/Math/MathML"><mi>abcde</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>5</mn></math>
+	  is a simple equation with mml namespace.</p>
+<p>A more complicated formula with a continued fraction</p>
+<p><math>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mi>a</mi>
+  <mo>+</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mi>b</mi>
+      <mo>+</mo>
+      <mstyle displaystyle="true">
+<mrow>
+        <mfrac>
+          <mn>1</mn>
+          <mrow>
+            <mi>c</mi>
+            <mo>+</mo>
+            <mstyle displaystyle="true">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mi>d</mi>
+                  <mo>+</mo>
+                  <mi>e</mi>
+                </mrow>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </mfrac>
+</mrow>
+      </mstyle>
+    </mrow>
+  </mfrac>
+</math></p>
+	<p>Done</p>
+  </body>
+</html>
